@@ -6,6 +6,7 @@ import java.util.List;
 
 public class ArrayListRunner {
     public static void main(String[] args) {
+
         List<Integer> arraylist = new ArrayList<>();
 
         //add(Object o):

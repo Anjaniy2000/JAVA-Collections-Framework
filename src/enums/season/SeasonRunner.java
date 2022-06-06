@@ -1,4 +1,6 @@
-package enums;
+package enums.season;
+
+import enums.season.Season;
 
 public class SeasonRunner {
     public static void main(String[] args) {
@@ -18,10 +20,10 @@ public class SeasonRunner {
 
 
         //way of storing the enums in database(with the help of index){custom indexing}:
-        Season currentSeason = Season.SUMMER;
-        System.out.println(currentSeason.getIndex());
+        Season currentseason = Season.SUMMER;
+        System.out.println(currentseason.getIndex());
 
-        Season nextSeason = Season.MONSOON;
-        System.out.println(nextSeason.ordinal());
+        Season nextseason = Season.MONSOON;
+        System.out.println(nextseason.ordinal());
     }
 }

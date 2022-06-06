@@ -1,4 +1,4 @@
-package enums;
+package enums.season;
 
 public enum Season {
     WINTER(1),

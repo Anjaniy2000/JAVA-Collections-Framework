@@ -69,7 +69,7 @@ public class ArrayDequeRunner {
         System.out.println("-----------------------");
 
 
-        /* ArrayDeque as Stack: */
+        /* ArrayDeque as a Stack: */
 
         Deque<String> stack = new ArrayDeque<>();
 

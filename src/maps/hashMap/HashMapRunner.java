@@ -53,7 +53,7 @@ public class HashMapRunner {
         //values():
         System.out.println("Values In Map Are: " + students.values());
 
-        //putIfAbsent():
+        //putIfAbsent(Object key, Object value):
         students.putIfAbsent(3, "Salekar Anjaniy");
         students.putIfAbsent(11, "Eleven From Stranger Things");
 
@@ -62,6 +62,14 @@ public class HashMapRunner {
         //getOrDefault(Object key, Object defaultValue):
         System.out.println("The Value For Key 11 Is: " + students.getOrDefault(11, "Mike"));
         System.out.println("The Value For Key 12 Is: " + students.getOrDefault(12, "Steve"));
+
+        //replace(Object  key, Object value):
+        students.replace(1, "Shah Jaya");
+
+        //replace(Object key, Object oldValue, Object newValue):
+        students.replace(3, "Salekar Ruchita", "Salekar Sai");
+
+        students.forEach((key, value) -> System.out.println(key + " " + value));
 
         //clear():
         students.clear();

@@ -1,6 +1,7 @@
 package maps.hashMap;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class HashMapRunner {
@@ -35,7 +36,7 @@ public class HashMapRunner {
         System.out.println(students.remove(2, "Salekar Anjaniy"));
 
         //putAll(Map map):
-        Map<Integer, String> newstudents = new HashMap<>();
+        Map<Integer, String> newstudents = new LinkedHashMap<>();
         newstudents.put(5, "Zalak Pandya");
         newstudents.put(6, "Salekar Ram");
         newstudents.put(4, "Mistry Vrushabh");

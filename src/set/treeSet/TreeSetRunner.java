@@ -1,4 +1,4 @@
-package set.treeset;
+package set.treeSet;
 
 import java.util.ArrayList;
 import java.util.List;

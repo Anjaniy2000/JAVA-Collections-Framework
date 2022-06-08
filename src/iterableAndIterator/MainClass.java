@@ -57,7 +57,7 @@ public class MainClass{
             System.out.println(name);
         });
 
-        ////Using Iterator - Interface:
+        //Using Iterator - Interface:
         System.out.println("Using Iterator Interface:");
         Iterator<String> nameIterator = names.iterator();
         while(nameIterator.hasNext()){

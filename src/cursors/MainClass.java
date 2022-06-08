@@ -31,14 +31,14 @@ public class MainClass {
         System.out.println(names);
 
         //Enumeration(Not Universal Cursor{Can Be Use With Legacy Classes(i.e Vector, HashTable)}, {Since Java 1.0}):
-        Vector<Integer> numbers = new Vector<>();
+        Vector<Integer> vector = new Vector<>();
         for(int i = 1 ; i <= 10 ; i++){
-            numbers.add(i);
+            vector.add(i);
         }
 
         System.out.println("Enumeration Cursor:");
 
-        Enumeration<Integer> numbersEnumeration = numbers.elements();
+        Enumeration<Integer> numbersEnumeration = vector.elements();
 
         while(numbersEnumeration.hasMoreElements()){
             System.out.println(numbersEnumeration.nextElement());
@@ -47,6 +47,28 @@ public class MainClass {
         //ListIterator(It is only applicable for List collection implemented classes like ArrayList, LinkedList, etc, {It provides bi-directional iteration},
         // Since Java 1.2)
 
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(88);
+        numbers.add(67);
+        numbers.add(57);
+        numbers.add(25);
+        numbers.add(101);
+
+        System.out.println("ListIterator Cursor:");
+
+        //Forward Direction:
+        ListIterator<Integer> forwardDirectionIterator = numbers.listIterator();
+        System.out.println("Forward Direction");
+        while(forwardDirectionIterator.hasNext()){
+            System.out.println(forwardDirectionIterator.next());
+        }
+
+        //Backward Direction:
+        ListIterator<Integer> backwardDirectionIterator = numbers.listIterator(numbers.size());
+        System.out.println("Backward Direction");
+        while(backwardDirectionIterator.hasPrevious()){
+            System.out.println(backwardDirectionIterator.previous());
+        }
 
 
     }

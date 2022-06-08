@@ -70,6 +70,25 @@ public class MainClass {
             System.out.println(backwardDirectionIterator.previous());
         }
 
+        //Other Methods(set(), add()):
+        List<Integer> numbers2 = new ArrayList<>();
+        for(int i = 0 ; i < 10 ; i++){
+            numbers2.add(i);
+        }
 
+        ListIterator<Integer> tempIterator = numbers2.listIterator();
+
+        System.out.println("After Removing All The Even Numbers From ArrayList:");
+        while(tempIterator.hasNext()){
+            int element = tempIterator.next();
+
+            if(element % 2 == 0){
+                element++;
+                tempIterator.set(element);
+                tempIterator.add(element);
+            }
+        }
+
+        numbers2.forEach(System.out::println);
     }
 }

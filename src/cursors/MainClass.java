@@ -46,7 +46,6 @@ public class MainClass {
 
         //ListIterator(It is only applicable for List collection implemented classes like ArrayList, LinkedList, etc, {It provides bi-directional iteration},
         // Since Java 1.2)
-
         List<Integer> numbers = new ArrayList<>();
         numbers.add(88);
         numbers.add(67);
@@ -90,5 +89,20 @@ public class MainClass {
         }
 
         numbers2.forEach(System.out::println);
+
+
+        /*
+        Important Points: Please note that initially, any iterator reference will point to the index just before the index of the first element in a collection.
+                          We don’t create objects of Enumeration, Iterator, ListIterator because they are interfaces.
+                          We use methods like elements(), iterator(), listIterator() to create objects.
+                          These methods have an anonymous Inner Class that extends respective interfaces and return this class object.
+
+        Note: The $ symbol in reference class name is a proof that concept of inner classes is used and these class objects are created.
+         */
+
+        //Inner Class Names:
+        System.out.println(nameIterator.getClass().getName());
+        System.out.println(numbersEnumeration.getClass().getName());
+        System.out.println(forwardDirectionIterator.getClass().getName());
     }
 }

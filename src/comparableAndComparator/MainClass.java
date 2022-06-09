@@ -11,9 +11,9 @@ public class MainClass {
 
         List<Student> students = new ArrayList<>();
         students.add(new Student("Jay Shah", 6.25F));
-        students.add(new Student("Anjaniy Salekar", 9.63F));
+        students.add(new Student("Anjaniy Salekar", 9.65F));
         students.add(new Student("Mahesh Baria", 9.15F));
-        students.add(new Student("Vrushabh Mistry", 8.25F));
+        students.add(new Student("Vrushabh Mistry", 9.65F));
         students.add(new Student("Ruchita Salekar", 7.25F));
 //        students.forEach(System.out::println);
 

@@ -36,21 +36,25 @@ public class Student implements Comparable<Student>{
     public int compareTo(Student o) {
 
         //Sorting(Decreasing Order):
-//        if(this.cgpa > o.cgpa){
-//            return -1;
-//        }else if(this.cgpa < o.cgpa){
-//            return 1;
-//        }else{
-//            return 0;
-//        }
-
-        //Sorting(Increasing Order):
-        if(this.cgpa < o.cgpa){
+        if(this.cgpa > o.cgpa){
             return -1;
-        }else if(this.cgpa > o.cgpa){
+        }else if(this.cgpa < o.cgpa){
             return 1;
         }else{
-            return 0;
+            //If Two Students Have Same CGPA:
+            //Then Sort Them On The Basis Of Name:
+            return o.name.compareTo(this.name);
         }
+
+        //Sorting(Increasing Order):
+//        if(this.cgpa < o.cgpa){
+//            return -1;
+//        }else if(this.cgpa > o.cgpa){
+//            return 1;
+//        }else{
+//            //If Two Students Have Same CGPA:
+//            //Then Sort Them On The Basis Of Name:
+//            return this.name.compareTo(o.name);
+//        }
     }
 }

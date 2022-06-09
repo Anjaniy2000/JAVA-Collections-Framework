@@ -2,7 +2,8 @@
 
 <h2>Java Collections Framework: </h2>
 
-* Classes
+* List
+  .ArrayList
 * Objects
 * Constructors
 * Encapsulation

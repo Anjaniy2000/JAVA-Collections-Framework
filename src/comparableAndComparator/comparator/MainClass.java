@@ -17,8 +17,12 @@ public class MainClass {
         players.forEach(System.out::println);
 
         System.out.println("After Sorting:");
-        Collections.sort(players, new Player.sortByNameThenMedals());
-        players.forEach(System.out::println);
+//        System.out.println("Sort By Name Then No. Of Medals:");
+//        Collections.sort(players, new Player.sortByNameThenMedals());
+//        players.forEach(System.out::println);
 
+        System.out.println("Sort By Game Name:");
+        Collections.sort(players, new Player.sortByGameName());
+        players.forEach(System.out::println);
     }
 }

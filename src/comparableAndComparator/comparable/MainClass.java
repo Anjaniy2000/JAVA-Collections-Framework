@@ -1,7 +1,5 @@
 package comparableAndComparator.comparable;
 
-import comparableAndComparator.comparable.Student;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

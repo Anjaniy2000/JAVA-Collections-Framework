@@ -31,5 +31,11 @@ public class MainClass {
         Collections.sort(players, Comparator.comparing(Player::getName).thenComparing(Player::getGameName).thenComparing(Player::getMedals));
         players.forEach(System.out::println);
 
+        /* Reversing The Sorting: */
+        System.out.println("Reversing The Sorting:");
+        Collections.sort(players, Comparator.comparing(Player::getName).thenComparing(Player::getGameName).thenComparing(Player::getMedals).reversed());
+        players.forEach(System.out::println);
+
+
     }
 }

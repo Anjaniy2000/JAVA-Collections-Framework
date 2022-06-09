@@ -36,9 +36,21 @@ public class Student implements Comparable<Student>{
     public int compareTo(Student o) {
 
         //Sorting(Decreasing Order):
-//        return Float.compare(o.cgpa, this.cgpa);
+//        if(this.cgpa > o.cgpa){
+//            return -1;
+//        }else if(this.cgpa < o.cgpa){
+//            return 1;
+//        }else{
+//            return 0;
+//        }
 
         //Sorting(Increasing Order):
-        return Float.compare(this.cgpa, o.cgpa);
+        if(this.cgpa < o.cgpa){
+            return -1;
+        }else if(this.cgpa > o.cgpa){
+            return 1;
+        }else{
+            return 0;
+        }
     }
 }
